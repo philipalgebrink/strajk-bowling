@@ -1,0 +1,22 @@
+.loading-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fcecec;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.logo-sub {
+  width: 100px;
+  height: auto;
+}
