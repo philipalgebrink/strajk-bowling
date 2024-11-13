@@ -12,7 +12,7 @@ export const createBooking = async (
     bookingData,
     {
       headers: {
-        "x-api-key": API_KEY,
+        "x-api-key": "738c6b9d-24cf-47c3-b688-f4f4c5747662",
       },
     }
   );
