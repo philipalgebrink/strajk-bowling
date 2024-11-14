@@ -4,6 +4,7 @@ import { BookingRequest } from "../types/models";
 import { useNavigate } from "react-router-dom";
 import "./Booking.css";
 import logo from "../assets/logo.svg";
+import navicon from "../assets/navicon.svg";
 
 const Booking: React.FC = () => {
   const [date, setDate] = useState("");
@@ -40,6 +41,12 @@ const Booking: React.FC = () => {
 
   return (
     <div className="booking-page">
+      <img
+        src={navicon}
+        alt="Menu"
+        className="navicon"
+        onClick={() => navigate("/menu")}
+      />
       <header className="booking-header">
         <img src={logo} alt="Strajk Bowling Logo" className="logo" />
         <h1>Booking</h1>

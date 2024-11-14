@@ -25,6 +25,10 @@ body {
   flex-direction: column;
 }
 
+.booking-page .logo {
+  animation: none;
+}
+
 .booking-header {
   text-align: center;
   margin-top: 20px;
@@ -237,4 +241,12 @@ h1 {
   box-shadow: 0 4px 8px rgba(255, 79, 90, 0.3);
   margin-top: 20px;
   letter-spacing: 2px;
+}
+
+.navicon {
+  position: absolute;
+  top: 22px;
+  left: 23px;
+  cursor: pointer;
+  z-index: 10;
 }
