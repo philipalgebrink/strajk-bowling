@@ -7,14 +7,12 @@ const API_KEY = "738c6b9d-24cf-47c3-b688-f4f4c5747662";
 export const createBooking = async (
   bookingData: BookingRequest
 ): Promise<BookingResponse> => {
-  const response = await axios.post<BookingResponse>(
-    `${API_URL}/bookings`,
-    bookingData,
-    {
-      headers: {
-        "x-api-key": "738c6b9d-24cf-47c3-b688-f4f4c5747662",
-      },
-    }
-  );
+  const response = await axios.post<BookingResponse>(API_URL, bookingData, {
+    headers: {
+      "x-api-key": API_KEY,
+      "Content-Type": "text/plain",
+    },
+  });
+
   return response.data;
 };
