@@ -74,8 +74,11 @@ const Booking: React.FC = () => {
           <div className="floating-label-container">
             <input
               type="number"
-              value={people}
-              onChange={(e) => setPeople(parseInt(e.target.value))}
+              value={people || ""}
+              onChange={(e) => {
+                const newValue = e.target.value ? parseInt(e.target.value) : 0;
+                setPeople(newValue);
+              }}
               min="1"
               required
             />
@@ -88,8 +91,11 @@ const Booking: React.FC = () => {
           <div className="floating-label-container">
             <input
               type="number"
-              value={lanes}
-              onChange={(e) => setLanes(parseInt(e.target.value))}
+              value={lanes || ""}
+              onChange={(e) => {
+                const newValue = e.target.value ? parseInt(e.target.value) : 0;
+                setLanes(newValue);
+              }}
               min="1"
               required
             />
