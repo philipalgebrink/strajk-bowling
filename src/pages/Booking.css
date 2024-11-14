@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-* {
-  font-family: "Bebas Neue", sans-serif;
-}
-
 html,
 body {
   height: 100%;
@@ -13,9 +9,9 @@ body {
 
 .booking-page {
   background-color: #fff4f1;
-  font-family: Arial, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   color: #333;
-  padding: 0px 20px;
+  padding: 0 20px;
   max-width: 400px;
   margin: 0 auto;
   border-radius: 8px;
@@ -26,25 +22,18 @@ body {
 }
 
 .booking-page .logo {
-  animation: none;
+  width: 70px;
 }
 
 .booking-header {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 23px;
 }
 
-.logo {
-  width: 70px;
-  height: auto;
-  margin-bottom: 5px;
-}
-
-h1 {
+.booking-page h1 {
   color: #ec315a;
   font-size: 60px;
-  font-weight: bold;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -83,7 +72,6 @@ h1 {
   position: absolute;
   top: -10px;
   left: 12px;
-  font-size: 16px;
   color: #6e4ec3;
   background-color: #fff4f1;
   padding: 0 4px;
