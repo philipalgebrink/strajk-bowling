@@ -25,14 +25,14 @@
   }
 }
 
-.logo {
+.logo-container .logo {
   width: 80%;
   height: 80%;
   margin-bottom: 20px;
   animation: floating 3s ease-in-out infinite;
 }
 
-.logo-sub {
+.logo-container .logo-sub {
   width: 80%;
   height: auto;
 }
