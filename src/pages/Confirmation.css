@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+
+.confirmation-page {
+  background-color: #fff4f1;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.confirmation-page .logo {
+  animation: none;
+  margin-top: 100px;
+  width: 76px;
+  height: auto;
+}
+
+.confirmation-page h1 {
+  color: #ec315a;
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+.details-section {
+  margin-top: 43px;
+}
+
+.confirmation-page h2 {
+  color: #441d81;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.confirmation-page h2::before,
+.confirmation-page h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 70%;
+  height: 1px;
+  background-color: #441d81;
+}
+
+.confirmation-page h2::before {
+  left: -110px;
+}
+
+.confirmation-page h2::after {
+  right: -110px;
+}
+
+.detail-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 12px;
+  border: 2px solid #6e4ec3;
+  border-radius: 8px;
+  font-family: "Work Sans", sans-serif;
+  color: #333;
+}
+
+.label {
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  background-color: #fff4f1;
+  padding: 0 4px;
+  font-size: 12px;
+  color: #6e4ec3;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.value {
+  color: #333;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 12px;
+  margin-top: 15px;
+  border: 2px solid #ec315a;
+  border-radius: 8px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  color: #ec315a;
+}
+
+.total-label {
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+.total-value {
+  font-weight: 400;
+  font-size: 24px;
+  color: #ec315a;
+}
+
+.confirm-button {
+  background-color: #ec315a;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(236, 49, 90, 0.3);
+  margin-top: 20px;
+}
+
+.navicon {
+  position: absolute;
+  top: 22px;
+  left: 23px;
+  cursor: pointer;
+  z-index: 10;
+}
