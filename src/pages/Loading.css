@@ -13,10 +13,23 @@
   text-align: center;
 }
 
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .logo {
   width: 80%;
   height: 80%;
   margin-bottom: 20px;
+  animation: floating 3s ease-in-out infinite;
 }
 
 .logo-sub {
