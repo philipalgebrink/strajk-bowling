@@ -16,11 +16,6 @@ const Booking: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (people > lanes * 4) {
-      alert("Maximum 4 players per lane.");
-      return;
-    }
-
     if (shoes.length !== people) {
       alert("The number of shoe sizes must match the number of players.");
       return;
@@ -29,12 +24,15 @@ const Booking: React.FC = () => {
     const when = `${date}T${time}`;
     const bookingData: BookingRequest = { when, lanes, people, shoes };
 
+    navigate("/loading");
+
     try {
       const response = await createBooking(bookingData);
       navigate("/confirmation", { state: response });
     } catch (error) {
       console.error("Failed to create booking:", error);
       alert("Something went wrong. Please try again.");
+      navigate("/booking");
     }
   };
 
