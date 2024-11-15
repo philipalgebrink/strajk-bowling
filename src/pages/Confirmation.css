@@ -7,11 +7,16 @@
   margin: 0 auto;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .confirmation-page .logo {
   animation: none;
-  margin-top: 100px;
+  margin-top: 30px;
   width: 76px;
   height: auto;
 }
@@ -26,7 +31,8 @@
 }
 
 .details-section {
-  margin-top: 43px;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .confirmation-page h2 {
@@ -46,24 +52,24 @@
   content: "";
   position: absolute;
   top: 50%;
-  width: 70%;
+  width: 30%;
   height: 1px;
   background-color: #441d81;
 }
 
 .confirmation-page h2::before {
-  left: -110px;
+  left: -50px;
 }
 
 .confirmation-page h2::after {
-  right: -110px;
+  right: -50px;
 }
 
 .detail-item {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 24px 0;
+  margin: 16px 0;
   font-size: 24px;
   font-weight: 400;
   padding: 12px;
@@ -75,8 +81,8 @@
 
 .label {
   position: absolute;
-  top: -8px;
-  left: 10px;
+  top: -10px;
+  left: 12px;
   background-color: #fff4f1;
   padding: 0 4px;
   font-size: 12px;
@@ -95,13 +101,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 12px;
-  margin-top: 15px;
+  padding: 12px;
+  margin-top: 20px;
   border: 2px solid #ec315a;
   border-radius: 8px;
   font-family: "Work Sans", sans-serif;
   font-size: 24px;
   color: #ec315a;
+  width: 100%;
 }
 
 .total-label {
