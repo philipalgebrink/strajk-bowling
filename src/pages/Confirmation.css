@@ -52,17 +52,17 @@
   content: "";
   position: absolute;
   top: 50%;
-  width: 30%;
+  width: 65%;
   height: 1px;
   background-color: #441d81;
 }
 
 .confirmation-page h2::before {
-  left: -50px;
+  left: -105px;
 }
 
 .confirmation-page h2::after {
-  right: -50px;
+  right: -105px;
 }
 
 .detail-item {
