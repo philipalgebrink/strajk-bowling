@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { createBooking } from "../api/bookingApi";
 import { BookingRequest } from "../types/models";
 import { useNavigate } from "react-router-dom";
+import { useBooking } from "../context/BookingContext"; // Use useBooking here
 import "./Booking.css";
 import logo from "../assets/logo.svg";
 import navicon from "../assets/navicon.svg";
@@ -13,6 +14,7 @@ const Booking: React.FC = () => {
   const [people, setPeople] = useState(1);
   const [shoes, setShoes] = useState<number[]>([]);
   const navigate = useNavigate();
+  const { setBooking } = useBooking(); // Use the hook to get setBooking
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -29,7 +31,8 @@ const Booking: React.FC = () => {
 
     try {
       const response = await createBooking(bookingData);
-      navigate("/confirmation", { state: response });
+      setBooking(response); // Save booking data to context
+      navigate("/confirmation");
     } catch (error) {
       console.error("Failed to create booking:", error);
       alert("Something went wrong. Please try again.");

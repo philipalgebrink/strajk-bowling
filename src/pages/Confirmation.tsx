@@ -1,18 +1,31 @@
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import { BookingResponse } from "../types/models";
+import { useNavigate } from "react-router-dom";
+import { useBooking } from "../context/BookingContext"; // Use useBooking hook
 import logo from "../assets/logo.svg";
-import "./Confirmation.css";
 import navicon from "../assets/navicon.svg";
+import "./Confirmation.css";
 
 const Confirmation: React.FC = () => {
-  const location = useLocation();
   const navigate = useNavigate();
-  const booking = location.state as BookingResponse;
+  const { booking } = useBooking(); // Access booking from context
 
   if (!booking) {
-    navigate("/");
-    return null;
+    return (
+      <div className="confirmation-page">
+        <img
+          src={navicon}
+          alt="Menu"
+          className="navicon"
+          onClick={() => navigate("/menu")}
+        />
+        <img src={logo} alt="Logo" className="logo" />
+        <h1>Booking Details Not Available</h1>
+        <p>It seems you accessed this page without completing a booking.</p>
+        <button className="confirm-button" onClick={() => navigate("/booking")}>
+          Back to Booking
+        </button>
+      </div>
+    );
   }
 
   return (
